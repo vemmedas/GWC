@@ -244,23 +244,8 @@ body, html {
 </footer>
  
 <!-- Add Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(40.750364, -73.972735);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.532876963201!2d-73.97484458458831!3d40.75030307932778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25903154316d9%3A0xca764bcfc89dbf4!2sPfizer%2C+Inc.!5e0!3m2!1sen!2sus!4v1503064191097" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 }
-
 
 // Modal Image Gallery
 function onClick(element) {
